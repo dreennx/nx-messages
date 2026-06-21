@@ -4,14 +4,14 @@
   "_campos": "id(unico) · type · style(opcional:roblox) · title · body · button(solo roblox) · errorCode(solo roblox) · duration(seg,0=fijo) · once(true=1 vez por persona) · enabled(false=apagado) · targets([]=todos,[userId]=solo esos)",
   "messages": [
     {
-      "id": "8396392068",
+      "id": "11105856278",
       "type": "warn",
       "title": "Advertencia",
       "body": "Escribe aquí tu warning. Cambia enabled a true y haz commit para enviarlo a todos.",
       "duration": 10,
       "once": false,
       "enabled": true,
-      "targets": [8396392068]
+      "targets": [11105856278]
     },
     {
       "id": "ban-troll-1",
