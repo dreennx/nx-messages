@@ -1,43 +1,29 @@
 {
-  "_comment": "NX BROADCAST — edita este archivo y haz commit para enviar avisos a todos los que ejecuten el script. Borra los ejemplos cuando tengas los tuyos.",
-  "_tipos": "type puede ser: info | warn | error | success",
-  "_campos": "id(unico) · type · title · body · image(rbxassetid opcional) · duration(seg, 0=fijo) · once(true=1 vez por persona) · enabled(false=borrador) · expires(os.time, 0=nunca) · targets([]=todos, [userId]=solo esos)",
+  "_comment": "NX BROADCAST — aquí mandas WARNINGS a quien ejecute el script. Para enviar uno: pon enabled:true (o agrega uno nuevo con id ÚNICO) y haz commit. Con todo en enabled:false NO sale nada al iniciar.",
+  "_estilos": "type (color del toast de esquina): warn | error | info | success.   style:roblox = popup centrado tipo 'Error al unirse'.",
+  "_campos": "id(unico) · type · style(opcional:roblox) · title · body · button(solo roblox) · errorCode(solo roblox) · duration(seg,0=fijo) · once(true=1 vez por persona) · enabled(false=apagado) · targets([]=todos,[userId]=solo esos)",
   "messages": [
     {
-      "id": "2026-06-21-bienvenida",
-      "type": "info",
-      "title": "Bienvenido a NX",
-      "body": "Gracias por usar el Profile Analyzer. Únete a nuestra comunidad.",
-      "image": "",
-      "duration": 9,
-      "once": true,
-      "enabled": true,
-      "expires": 0,
-      "targets": []
-    },
-    {
-      "id": "2026-06-21-mantenimiento",
+      "id": "warning-1",
       "type": "warn",
-      "title": "Aviso de mantenimiento",
-      "body": "Algunas funciones podrían fallar mientras actualizamos los servidores.",
-      "image": "",
+      "title": "Advertencia",
+      "body": "Escribe aquí tu warning. Cambia enabled a true y haz commit para enviarlo a todos.",
       "duration": 10,
       "once": false,
       "enabled": false,
-      "expires": 0,
       "targets": []
     },
     {
-      "id": "2026-06-21-solo-staff",
-      "type": "success",
-      "title": "Hola staff",
-      "body": "Este aviso solo lo ven los UserId de la lista targets.",
-      "image": "",
-      "duration": 8,
+      "id": "ban-troll-1",
+      "style": "roblox",
+      "title": "Error al unirse",
+      "body": "Esta experiencia o sus moderadores te expulsaron por 4 minutos. Mensaje de moderación:\n\nRoblox has determined that content in this experience violated our Community Standards. You have been temporarily removed.",
+      "button": "Salir",
+      "errorCode": 600,
+      "duration": 0,
       "once": false,
       "enabled": false,
-      "expires": 0,
-      "targets": [8396392068]
+      "targets": []
     }
   ]
 }
