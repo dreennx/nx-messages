@@ -4,7 +4,7 @@
   "_campos": "id(unico) · type · style(opcional:roblox) · title · body · button(solo roblox) · errorCode(solo roblox) · duration(seg,0=fijo) · once · enabled · targets([]=todos,[userId]=solo esos)",
   "messages": [
     {
-      "id": "ban-8396392068",
+      "id": "ban-11105856278",
       "style": "roblox",
       "title": "Error al unirse",
       "body": "Esta experiencia o sus moderadores te expulsaron por 4 minutos. Mensaje de moderación:\n\nRoblox has determined that content in this experience violated our Community Standards. You have been temporarily removed.",
@@ -13,7 +13,7 @@
       "duration": 0,
       "once": false,
       "enabled": true,
-      "targets": [8396392068]
+      "targets": [11105856278]
     }
   ]
 }
