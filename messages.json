@@ -1,0 +1,43 @@
+{
+  "_comment": "NX BROADCAST — edita este archivo y haz commit para enviar avisos a todos los que ejecuten el script. Borra los ejemplos cuando tengas los tuyos.",
+  "_tipos": "type puede ser: info | warn | error | success",
+  "_campos": "id(unico) · type · title · body · image(rbxassetid opcional) · duration(seg, 0=fijo) · once(true=1 vez por persona) · enabled(false=borrador) · expires(os.time, 0=nunca) · targets([]=todos, [userId]=solo esos)",
+  "messages": [
+    {
+      "id": "2026-06-21-bienvenida",
+      "type": "info",
+      "title": "Bienvenido a NX",
+      "body": "Gracias por usar el Profile Analyzer. Únete a nuestra comunidad.",
+      "image": "",
+      "duration": 9,
+      "once": true,
+      "enabled": true,
+      "expires": 0,
+      "targets": []
+    },
+    {
+      "id": "2026-06-21-mantenimiento",
+      "type": "warn",
+      "title": "Aviso de mantenimiento",
+      "body": "Algunas funciones podrían fallar mientras actualizamos los servidores.",
+      "image": "",
+      "duration": 10,
+      "once": false,
+      "enabled": false,
+      "expires": 0,
+      "targets": []
+    },
+    {
+      "id": "2026-06-21-solo-staff",
+      "type": "success",
+      "title": "Hola staff",
+      "body": "Este aviso solo lo ven los UserId de la lista targets.",
+      "image": "",
+      "duration": 8,
+      "once": false,
+      "enabled": false,
+      "expires": 0,
+      "targets": [8396392068]
+    }
+  ]
+}
