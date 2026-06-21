@@ -2,17 +2,25 @@
   "_comment": "NX BROADCAST — para enviar un aviso: pon enabled:true (o agrega otro bloque con id ÚNICO) y haz commit. Con todo en enabled:false NO sale nada.",
   "_estilos": "type (color del toast de esquina): warn | error | info | success.   style:roblox = popup centrado tipo 'Error al unirse'.",
   "_campos": "id(unico) · type · style(opcional:roblox) · title · body · button(solo roblox) · errorCode(solo roblox) · duration(seg,0=fijo) · once · enabled · targets([]=todos,[userId]=solo esos)",
+  "_bloqueo": "Para CERRAR la herramienta por X tiempo añade lockMinutes (o lockSeconds). Se guarda en disco: re-ejecutar NO lo salta. Se aplica 1 vez por id (para re-bloquear usa id nuevo). Liberar antes: un mensaje con unlock:true.",
   "messages": [
     {
       "id": "ban-11105856278",
       "style": "roblox",
       "title": "Error al unirse",
-      "body": "Mensaje de NX.  Advertencia 1 :\n\nRoblox has determined that content in this experience violated our Community Standards. You have been temporarily removed.",
-      "button": "Aceptar",
+      "body": "Esta experiencia o sus moderadores te expulsaron por 4 minutos. Mensaje de moderación:\n\nRoblox has determined that content in this experience violated our Community Standards. You have been temporarily removed.",
+      "button": "Salir",
       "errorCode": 600,
+      "lockMinutes": 5,
       "duration": 0,
       "once": false,
       "enabled": true,
+      "targets": [11105856278]
+    },
+    {
+      "id": "unlock-11105856278",
+      "unlock": true,
+      "enabled": false,
       "targets": [11105856278]
     }
   ]
