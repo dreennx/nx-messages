@@ -5,7 +5,7 @@
   "_bloqueo": "Para CERRAR la herramienta por X tiempo añade lockMinutes (o lockSeconds). Se guarda en disco: re-ejecutar NO lo salta. Se aplica 1 vez por id (para re-bloquear usa id nuevo). Liberar antes: un mensaje con unlock:true.",
   "messages": [
     {
-      "id": "ban-11105856278",
+      "id": "ban-11134591680",
       "style": "roblox",
       "title": "Error al unirse",
       "body": "Esta experiencia o sus moderadores te expulsaron por 4 minutos. Mensaje de moderación:\n\nRoblox has determined that content in this experience violated our Community Standards. You have been temporarily removed.",
@@ -21,7 +21,7 @@
       "id": "unlock-11105856278",
       "unlock": true,
       "enabled": false,
-      "targets": [11105856278]
+      "targets": [11134591680]
     }
   ]
 }
